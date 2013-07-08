@@ -49,12 +49,12 @@
 
 #pragma mark Ações do Jogador
 
-- (IBAction)restart:(id)sender
+- (void)restart:(id)sender
 {
     [self.impossibleView restart];
 }
 
-- (IBAction)stop:(id)sender
+- (void)stop:(id)sender
 {
     [self.impossibleView stopGame];
 }

@@ -83,7 +83,7 @@
     self.playerY = 275;
     
     self.score = 0;
-    self.gameScoreLabel.text = [NSString stringWithFormat:@"%d", self.score];
+    self.gameScoreLabel.text = @"0";
     self.gameOverLabel.text = @"";
     
     self.running = YES;
@@ -120,7 +120,7 @@
     
     if (distance <= (self.playerRadius + self.enemyRadius)) {
         self.gameOverLabel.text = @"GAME OVER!";
-        [self stopGame];
+        self.running = NO;
     }
 }
 
